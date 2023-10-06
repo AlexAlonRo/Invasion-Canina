@@ -2,6 +2,9 @@
 
 ## Descripcion
 Bienvenido al repositorio oficial de "Invasión Canina: Rescate en la UTNG", un emocionante juego de acción en 2D que te sumerge en una lucha desesperada contra una raza de perros mutantes altamente inteligentes que amenazan con apoderarse de la ciudad de Dolores Hidalgo, Guanajuato, comenzando desde la Universidad Tecnológica del Norte de Guanajuato (UTNG).
+Este juego está siendo desarrollado como un proyecto estudiantil en la UTNG, y tu apoyo y contribuciones son fundamentales para llevarlo al siguiente nivel. Únete a nosotros en esta emocionante aventura para salvar la humanidad de la amenaza de los perros mutantes.
+
+¡Prepárate para enfrentarte a la invasión canina en "Invasión Canina" y conviértete en un héroe en la lucha por la UTNG!
 
 ## Caracteristicas Destacadas
 - Explora un campus universitario detallado y peligroso lleno de obstáculos y enemigos.
