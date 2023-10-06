@@ -13,3 +13,6 @@ Este juego está siendo desarrollado como un proyecto estudiantil en la UTNG, y 
 - Rescata a personajes clave en cada nivel que te proporcionarán información vital y partes esenciales para enfrentar a la temible Perra Madre.
 - Enfréntate a la Perra Madre en un emocionante enfrentamiento final en el nivel subterráneo más profundo de la UTNG.
 - Disfruta de una experiencia de juego en 2D al estilo "Metal Slug" con gráficos detallados y monstruos aterradores.
+
+# Trello
+https://trello.com/invite/invasioncanina/ATTI50dee33ebc4d73bc0098fd75f257afdb842394CB
