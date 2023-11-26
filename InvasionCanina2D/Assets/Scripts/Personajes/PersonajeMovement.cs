@@ -13,12 +13,13 @@ public class PersonajeMovement : MonoBehaviour
     private Animator Animator;
     private float Horizontal;
     private bool Grounded = true;
-
+    private bool lookingRight;
     // Start is called before the first frame update
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        this.lookingRight = true;
     }
 
     // Update is called once per frame
@@ -26,8 +27,7 @@ public class PersonajeMovement : MonoBehaviour
     {
         Horizontal = Input.GetAxisRaw("Horizontal");
 
-        if(Horizontal<0.0f) transform.localScale = new Vector3 (-2.0f, 2.0f, 1.0f);
-        else if(Horizontal>0.0f) transform.localScale = new Vector3(2.0f, 2.0f, 1.0f);
+        this.FlipSprite(Horizontal);
         Animator.SetBool("running", Horizontal != 0.0f);
 
         Debug.DrawRay(transform.position, Vector3.down * 1f, Color.cyan);
@@ -56,5 +56,24 @@ public class PersonajeMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Rigidbody2D.velocity = new Vector2 (Horizontal * Speed, Rigidbody2D.velocity.y );
+    }
+
+    void FlipSprite(float direction)
+    {
+        if (direction == 0)
+            return;
+
+        // Got to right
+        if (direction > 0 && this.lookingRight == false)
+        {
+            this.lookingRight = true;
+            this.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        // Got to left
+        else if (direction < 0 && this.lookingRight == true)
+        {
+            this.lookingRight = false;
+            this.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 }
