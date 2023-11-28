@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class CQCWeapon : Weapon
 {
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public Transform hitSpot;
     public float range = 1;
 
@@ -26,6 +33,10 @@ public class CQCWeapon : Weapon
     }
     IEnumerator Animate()
     {
+
+        audioSource.Play();
+
+
         this.gfx.localRotation = Quaternion.Euler(0, 0, -80);
 
         yield return new WaitForSeconds(this.maxCooldownTime * 0.9f);
