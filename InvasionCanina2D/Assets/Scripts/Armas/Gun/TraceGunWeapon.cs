@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TraceGunWeapon : GunWeapon
 {
+    private AudioSource audioSource;
+
+
     [Header("Trace Gun Weapon")]
     public float range;
 
@@ -16,6 +19,8 @@ public class TraceGunWeapon : GunWeapon
 
     protected override void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         base.Start();
 
         this.trails = new LineRenderer[this.bulletsPerShoot];
@@ -37,6 +42,8 @@ public class TraceGunWeapon : GunWeapon
 
     protected override void ShootProjectile(Vector3 position, Vector3 direction)
     {
+        audioSource.Play(); audioSource.Play();
+
         RaycastHit2D hit = Physics2D.Raycast(position, direction, this.range);
 
         Vector3 shootStart = position;
