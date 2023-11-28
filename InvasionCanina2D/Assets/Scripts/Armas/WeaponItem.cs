@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WeaponItem : MonoBehaviour
 {
+
     [Header("Common")]
     public GameObject weaponPrefab;
 
@@ -15,6 +16,7 @@ public class WeaponItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         this.justDropped = true;
 
         Invoke("ActivatePickUpMode", 1f);
