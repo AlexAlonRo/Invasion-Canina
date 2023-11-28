@@ -11278,6 +11278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PaloItem
       objectReference: {fileID: 0}
+    - target: {fileID: 4734938894156588736, guid: 88e7d88463f7f954ba3893833b50291c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8647188561554356697, guid: 88e7d88463f7f954ba3893833b50291c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.4
