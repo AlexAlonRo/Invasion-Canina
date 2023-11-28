@@ -1,13 +1,11 @@
 using MongoDB.Bson;
 using MongoDB.Driver;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class MenuInicial : MonoBehaviour
 {
@@ -18,9 +16,15 @@ public class MenuInicial : MonoBehaviour
     public GameObject register;
     public GameObject ranking;
     public GameObject btnranking;
+    public GameObject iconoN1;
+    public GameObject iconoN2;
 
     public TMP_Text labelTitulo;
     public TMP_Text labelMensaje;
+
+    public Toggle PantallaCompleta;
+    public Slider Volumen;
+    public TMP_Dropdown Calidad;
 
     public RowUi rowUi;
     public GameObject tableContainer;
@@ -30,8 +34,9 @@ public class MenuInicial : MonoBehaviour
     Color colorCase3 = new Color(0.715f, 0.435f, 0.337f); // Color hexadecimal: #B76F56
     void Start()
     {
-        if (PlayerPrefs.HasKey("idUsuario"))
+        if (PlayerPrefs.HasKey("idUsuario") && PlayerPrefs.HasKey("usuario"))
         {
+            
             if (btnranking != null)
             {
                 btnranking.SetActive(false);
@@ -39,12 +44,19 @@ public class MenuInicial : MonoBehaviour
         }
         else
         {
+            ControllerUser.Instance.InicioSession(string.Empty, string.Empty);
             if (btnranking != null)
             {
                 btnranking.SetActive(true);
             }
         }
+        ControllerUser.Instance.SetCalidad(PlayerPrefs.HasKey("calidad") ? PlayerPrefs.GetInt("calidad"):3);
+        ControllerUser.Instance.SetPantalla(PlayerPrefs.HasKey("pantallaCompleta") ? (PlayerPrefs.GetInt("pantallaCompleta") ==1?true:false):true);
+        ControllerUser.Instance.SetVolumen(PlayerPrefs.HasKey("volumen") ? PlayerPrefs.GetFloat("volumen"):0f);
 
+        PantallaCompleta.isOn = ControllerUser.Instance.GetPantalla();
+        Volumen.value = ControllerUser.Instance.GetVolumen();
+        Calidad.value = ControllerUser.Instance.GetCalidad();
     }
 
     void Update()
@@ -63,6 +75,9 @@ public class MenuInicial : MonoBehaviour
                 btnranking.SetActive(false);
             }
         }
+        PantallaCompleta.isOn = ControllerUser.Instance.GetPantalla();
+        Volumen.value = ControllerUser.Instance.GetVolumen();
+        Calidad.value = ControllerUser.Instance.GetCalidad();
     }
     public void Jugar(int index)
     {
@@ -74,7 +89,9 @@ public class MenuInicial : MonoBehaviour
         if (PlayerPrefs.HasKey("idUsuario"))
         {
             // El valor existe, puedes recuperarlo
-            //string idUsuario = PlayerPrefs.GetString("idUsuario");
+            string idUsuario = PlayerPrefs.GetString("idUsuario");
+            string nameUsuario = PlayerPrefs.GetString("usuario");
+            ControllerUser.Instance.InicioSession(idUsuario,nameUsuario);
             if (home != null && niveles != null) {
                 niveles.SetActive(true);
                 home.SetActive(false);
@@ -144,18 +161,34 @@ public class MenuInicial : MonoBehaviour
     {
         Debug.Log("Salir...");
         PlayerPrefs.DeleteKey("idUsuario");
+        PlayerPrefs.DeleteKey("usuario");
         Application.Quit();
     }
-    public void Ranking()
+    public void Ranking(int nivel)
     {
+        if(nivel == 3)
+        {
+            ranking.SetActive(true);
+            home.SetActive(false);
+            nivel = 1;
+        }
+        
+        if(nivel == 1)
+        {
+            iconoN1.SetActive(true);
+            iconoN2.SetActive(false);
+        }
+        else
+        {
+            iconoN1.SetActive(false);
+            iconoN2.SetActive(true);
+        }
 
-        ranking.SetActive(true);
-        home.SetActive(false);
 
         ConexionBD conexion = new ConexionBD();
         var coleccion = conexion.ConexionMongo2();
 
-        var filtro = Builders<BsonDocument>.Filter.Empty;
+        var filtro = Builders<BsonDocument>.Filter.Eq("nivel", nivel);
         var usuariosTopScore = coleccion.Find(filtro)
             .Sort(Builders<BsonDocument>.Sort.Descending("score"))
             .Limit(10)

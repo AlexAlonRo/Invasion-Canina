@@ -62,9 +62,10 @@ public class Login : MonoBehaviour
             string idUsuario = usuarioE["_id"].ToString();
             string usuario = usuarioE["Usuario"].ToString();
             PlayerPrefs.SetString("idUsuario", idUsuario);
+            PlayerPrefs.SetString("usuario", usuario);
             //Debug.Log("ID del documento insertado: " + idUsuario);
-
-            if(home != null && login != null && ranking != null)
+            ControllerUser.Instance.InicioSession(idUsuario, usuario);
+            if (home != null && login != null && ranking != null)
             {
                 home.SetActive(true);
                 ranking.SetActive(true);
