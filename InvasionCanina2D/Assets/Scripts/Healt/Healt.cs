@@ -16,6 +16,7 @@ public class Healt : MonoBehaviour
     protected float currentHealth;
 
     public bool isPlayer;
+    public int puntaje;
 
     private static int score = 0;
 
@@ -45,13 +46,15 @@ public class Healt : MonoBehaviour
         if (isPlayer)
         {
             score = 0;
+            this.gameObject.SetActive(false);
         }
         else
         {
-            score += 1;
+            score += puntaje;
+            Destroy(this.gameObject);
         }
+        ControllerUser.Instance.SumarPuntos(score);
         Debug.Log("Score: " + score);
-        Destroy(this.gameObject);
     }
 
     public float GetHealthPercent()
@@ -72,6 +75,12 @@ public class Healt : MonoBehaviour
     public static int ObtenerPuntaje()
     {
         return score;
+    }
+
+    public void Reiniciar()
+    {
+        score = 0;
+        ControllerUser.Instance.SumarPuntos(score);
     }
 }
 

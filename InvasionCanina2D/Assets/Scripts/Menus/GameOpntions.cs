@@ -66,9 +66,11 @@ public class GameOpntions : MonoBehaviour
             string idUsuario = registroInsertado["_id"].ToString();
             string usuario = registroInsertado["Usuario"].ToString();
             PlayerPrefs.SetString("idUsuario", idUsuario);
+            PlayerPrefs.SetString("usuario", usuario);
+            ControllerUser.Instance.InicioSession(idUsuario, usuario);
             //Debug.Log("ID del documento insertado: " + idUsuario);
 
-            if(home != null && registro != null && ranking != null)
+            if (home != null && registro != null && ranking != null)
             {
                 home.SetActive(true);
                 ranking.SetActive(true);
@@ -94,6 +96,7 @@ public class GameOpntions : MonoBehaviour
                 notificacion.SetActive(true);
 
             }
+            ControllerUser.Instance.InicioSession(string.Empty, string.Empty);
         }
     }
 }

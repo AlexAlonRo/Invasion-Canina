@@ -82,7 +82,7 @@ MonoBehaviour:
   cooldownTime: 0.3
   damage: 1
   hitSpot: {fileID: 7980977905362620917}
-  range: 0.29
+  range: 0.3
   gfx: {fileID: 6490731180927988806}
 --- !u!1 &7703252055955956599
 GameObject:
