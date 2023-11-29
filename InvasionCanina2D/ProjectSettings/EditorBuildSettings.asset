@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel1T.unity
     guid: fc049108cb22cc040a09b8feff5e981e
   - enabled: 1
-    path: Assets/Scenes/Cinematica2.unity
+    path: Assets/Scenes/Cinematica3.unity
     guid: 5fcab40c31a9a1e4491b9f7a50de04c1
   - enabled: 1
     path: Assets/Scenes/Nivel2.unity
