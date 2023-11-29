@@ -19,9 +19,11 @@ public class Healt : MonoBehaviour
     public int puntaje;
 
     private static int score = 0;
-
+    public Action<float, Vector3> OnDamage;
+    public Action OnDeath;
     protected virtual void Awake()
     {
+        ControllerUser.Instance.SetScoreA(0);
         this.currentHealth = this.maxHealth;
     }
 
@@ -30,8 +32,12 @@ public class Healt : MonoBehaviour
         this.currentHealth = Mathf.Clamp(this.currentHealth + amount, 0, this.maxHealth);
     }
 
-    public virtual void Damage(float amount)
+    public virtual void Damage(float amount, Vector3 instigatorLocation)
     {
+        if (this.OnDamage != null)
+        {
+            this.OnDamage(amount, instigatorLocation);
+        }
         this.currentHealth = Mathf.Clamp(this.currentHealth - amount, 0, this.maxHealth);
 
         if (this.currentHealth == 0)
@@ -42,7 +48,7 @@ public class Healt : MonoBehaviour
 
     public virtual void Die()
     {
-
+        
         if (isPlayer)
         {
             score = 0;
@@ -53,7 +59,12 @@ public class Healt : MonoBehaviour
             score += puntaje;
             Destroy(this.gameObject);
         }
+
         ControllerUser.Instance.SumarPuntos(score);
+        if (this.OnDeath != null)
+        {
+            this.OnDeath();
+        }
         Debug.Log("Score: " + score);
     }
 
@@ -80,6 +91,7 @@ public class Healt : MonoBehaviour
     public void Reiniciar()
     {
         score = 0;
+        Time.timeScale = 1f;
         ControllerUser.Instance.SumarPuntos(score);
     }
 }

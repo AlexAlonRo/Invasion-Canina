@@ -56,7 +56,6 @@ public class Menu : MonoBehaviour
                 btnSalir.SetActive(true);
             }
             int puntaje = ControllerUser.Instance.GetScore();
-                
             labelScore.text = $"Puntaje : {puntaje}";
                 
         }
@@ -77,6 +76,7 @@ public class Menu : MonoBehaviour
     {
         Time.timeScale = 1f;
         Player.GetComponent<Healt>().Reiniciar();
+        ControllerUser.Instance.SetPosion(false);
         SceneManager.LoadScene("MenuInicial");
     }
 
@@ -107,29 +107,34 @@ public class Menu : MonoBehaviour
                 btnSalir.SetActive(true);
             }
             int puntaje = ControllerUser.Instance.GetScore();
-
+            puntaje = puntaje > 0 ? puntaje : ControllerUser.Instance.GetScoreA();
             labelScore.text = $"Puntaje : {puntaje}";
         }
     }
 
     public void Reiniciar()
     {
-        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
         Player.GetComponent<Healt>().Reiniciar();
+        ControllerUser.Instance.SetPosion(false);
     }
     
-    public void SiguienteNivel()
+    public void SiguienteNivel(string nivel)
     {
         Time.timeScale = 1f;
         Player.GetComponent<Healt>().Reiniciar();
-        SceneManager.LoadScene("Nivel2");
+        ControllerUser.Instance.SetPosion(false);
+        SceneManager.LoadScene(nivel);
+
     }
 
-    public void PasarNivel()
+    public void PasarNivel(int Nivel, int Personaje)
     {
         int puntaje = ControllerUser.Instance.GetScore();
-        if (menu != null && btnpausa != null && titulo != null)
+        bool isPaso = ControllerUser.Instance.GetPosion();
+
+        if (isPaso)
         {
             labelScore.text = $"Puntaje : {puntaje}";
             titulo.text = string.Empty;
@@ -140,19 +145,19 @@ public class Menu : MonoBehaviour
             btnOpciones.SetActive(false);
             btnSiguiente.SetActive(true);
             btnSalir.SetActive(false);
-            //string idScore = EnvioDatos(puntaje);
+            string idScore = EnvioDatos(puntaje,Nivel,Personaje);
 
-            //if (idScore != null)
-            //{
-            //    btnSiguiente.SetActive(true);
-            //}
+            if (idScore != null)
+            {
+                btnSiguiente.SetActive(true);
+            }
         }
         
 
     }
 
 
-    public string EnvioDatos( int iScore)
+    public string EnvioDatos( int iScore, int iNivel, int iPersonaje)
     {
         ConexionBD conexion = new ConexionBD();
         var coleccion = conexion.ConexionMongo2();
@@ -161,7 +166,7 @@ public class Menu : MonoBehaviour
         string userSession =  ControllerUser.Instance.GetName();
         
         
-        var Registro = new BsonDocument { { "idUser", idUser}, { "user", userSession }, { "score", iScore }, { "nivel",1 },{ "jugador",1} };
+        var Registro = new BsonDocument { { "idUser", idUser}, { "user", userSession }, { "score", iScore }, { "nivel",iNivel },{ "jugador",iPersonaje} };
         coleccion.InsertOne(Registro);
         var registroInsertado = Registro;
 

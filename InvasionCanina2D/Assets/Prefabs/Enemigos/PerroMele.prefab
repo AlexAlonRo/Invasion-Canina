@@ -146,11 +146,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5715656626394564704}
-  - component: {fileID: 1184796572926685924}
   - component: {fileID: 8346156698153095006}
   - component: {fileID: 590134077265764897}
   - component: {fileID: 7129579896354863963}
+  - component: {fileID: 2696485271810084859}
   - component: {fileID: 8460099190043399739}
+  - component: {fileID: 8069837899418326368}
   m_Layer: 0
   m_Name: PerroMele
   m_TagString: Untagged
@@ -176,41 +177,6 @@ Transform:
   - {fileID: 211677457442188472}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1184796572926685924
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6920133969994016376}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.092642665, y: -0.14359611}
-  serializedVersion: 2
-  m_Radius: 0.44904655
 --- !u!50 &8346156698153095006
 Rigidbody2D:
   serializedVersion: 4
@@ -273,7 +239,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   isPlayer: 0
-  puntaje: 0
+  puntaje: 100
+--- !u!114 &2696485271810084859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6920133969994016376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e41181db57d5c9428f5fafa2803f55c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedColor: {r: 1, g: 0, b: 0, a: 1}
+  gfx: {fileID: 8419357479566748498}
+  recoverSpeed: 2
 --- !u!82 &8460099190043399739
 AudioSource:
   m_ObjectHideFlags: 0
@@ -283,7 +264,7 @@ AudioSource:
   m_GameObject: {fileID: 6920133969994016376}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ba264550a8f11c0478ab4f3c2ff29e83, type: 2}
   m_audioClip: {fileID: 8300000, guid: 76e8582670e30374fb153b744a2c10bb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -370,6 +351,58 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!60 &8069837899418326368
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6920133969994016376}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.018931627, y: 0.8674786}
+      - {x: -1.6704583, y: -0.16427368}
+      - {x: -1.2882552, y: -1.0740598}
+      - {x: -0.055889964, y: -1.0172648}
+      - {x: -0.060956478, y: -0.037331343}
+      - {x: 0.327466, y: 0.023387909}
+      - {x: 0.37525058, y: 0.33102077}
+  m_UseDelaunayMesh: 0
 --- !u!1001 &3652448211378390785
 PrefabInstance:
   m_ObjectHideFlags: 0

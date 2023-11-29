@@ -6,7 +6,8 @@ using UnityEngine;
 public class GanarNivel : MonoBehaviour
 {
     public GameObject menuContenedor;
-
+    public int nivel;
+    public int personaje;
     private Menu menu;
 
     private void Start()
@@ -21,7 +22,7 @@ public class GanarNivel : MonoBehaviour
             var Player = other.gameObject.GetComponent<Healt>();
             if (Player != null)
             {
-                menu.PasarNivel();
+                menu.PasarNivel(nivel,personaje);
             }
         }
 

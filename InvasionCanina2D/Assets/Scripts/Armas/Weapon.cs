@@ -39,7 +39,7 @@ public abstract class Weapon : MonoBehaviour
 
    public virtual void OnHit(Healt healt) 
    {
-        healt.Damage(this.damage);
+        healt.Damage(this.damage, this.transform.position);
    }
     public virtual void Throw()
     {

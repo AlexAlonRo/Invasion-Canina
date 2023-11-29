@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Nivel2.unity
-    guid: cecc5e913659388458181eacdacf7e26
+    path: Assets/Scenes/Nivel1T.unity
+    guid: fc049108cb22cc040a09b8feff5e981e
   - enabled: 1
-    path: Assets/Scenes/Nivel3.unity
-    guid: 60d9062abb1a9064c9e1d7597a42f673
+    path: Assets/Scenes/Cinematica2.unity
+    guid: 5fcab40c31a9a1e4491b9f7a50de04c1
+  - enabled: 1
+    path: Assets/Scenes/Nivel2.unity
+    guid: d541856a5aef18a46b2d22e3ce596d53
   m_configObjects: {}
