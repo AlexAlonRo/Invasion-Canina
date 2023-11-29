@@ -29,14 +29,17 @@ public class MenuInicial : MonoBehaviour
     public RowUi rowUi;
     public GameObject tableContainer;
 
+    public TMP_Text nombreJugador;
+
     Color colorCase1 = new Color(1f, 0.823f, 0f); // Color hexadecimal: #FFD200
     Color colorCase2 = new Color(0.776f, 0.776f, 0.776f); // Color hexadecimal: #C6C6C6
     Color colorCase3 = new Color(0.715f, 0.435f, 0.337f); // Color hexadecimal: #B76F56
     void Start()
     {
+        
         if (PlayerPrefs.HasKey("idUsuario") && PlayerPrefs.HasKey("usuario"))
         {
-            
+            nombreJugador.text = $"Hola {PlayerPrefs.GetString("usuario")} !";
             if (btnranking != null)
             {
                 btnranking.SetActive(false);
@@ -58,7 +61,7 @@ public class MenuInicial : MonoBehaviour
         Volumen.value = ControllerUser.Instance.GetVolumen();
         Calidad.value = ControllerUser.Instance.GetCalidad();
     }
-
+    
     void Update()
     {
         if (PlayerPrefs.HasKey("idUsuario"))
@@ -78,10 +81,13 @@ public class MenuInicial : MonoBehaviour
         PantallaCompleta.isOn = ControllerUser.Instance.GetPantalla();
         Volumen.value = ControllerUser.Instance.GetVolumen();
         Calidad.value = ControllerUser.Instance.GetCalidad();
+        ControllerUser.Instance.SetPosion(false);
     }
     public void Jugar(int index)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + index);
+        ControllerUser.Instance.SetPosion(false);
+        ControllerUser.Instance.personaje = index;
+        SceneManager.LoadScene("Cinematica1");
     }
 
     public void Niveles()
@@ -159,6 +165,7 @@ public class MenuInicial : MonoBehaviour
 
     public void Salir()
     {
+        nombreJugador.text = string.Empty;
         Debug.Log("Salir...");
         PlayerPrefs.DeleteKey("idUsuario");
         PlayerPrefs.DeleteKey("usuario");

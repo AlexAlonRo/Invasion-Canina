@@ -9,9 +9,12 @@ public class ControllerUser : MonoBehaviour
     [SerializeField] private string idUser;
     [SerializeField] private string nameUser;
     [SerializeField] private int score;
+    [SerializeField] private int scoreA;
+    [SerializeField] public int personaje=0;
     [SerializeField] private int calidad = 2;
     [SerializeField] private float volumen = 0;
     [SerializeField] private bool isPantallaCompleta = true;
+    [SerializeField] private bool isPosion = false;
 
     private void Awake()
     {
@@ -22,6 +25,7 @@ public class ControllerUser : MonoBehaviour
         else{
             Destroy(gameObject);
         }
+        scoreA = 0;
     }
 
     public void InicioSession(string id, string name) 
@@ -33,7 +37,16 @@ public class ControllerUser : MonoBehaviour
 
     public void SumarPuntos(int puntaje)
     {
-            score = puntaje;
+        if (score > 0)
+        {
+            scoreA = score;
+        }
+        score = puntaje;
+        
+    }
+
+    public void SetScoreA(int s) { 
+        scoreA = s;
     }
 
     public string GetID()
@@ -49,7 +62,10 @@ public class ControllerUser : MonoBehaviour
     {
         return score;
     }
-
+    public int GetScoreA()
+    {
+        return scoreA;
+    }
     public bool GetPantalla()
     {
         return isPantallaCompleta;
@@ -65,6 +81,11 @@ public class ControllerUser : MonoBehaviour
         return calidad;
     }
 
+    public bool GetPosion()
+    {
+        return isPosion;
+    }
+
     public void SetPantalla(bool opcion)
     {
         isPantallaCompleta = opcion;
@@ -78,5 +99,10 @@ public class ControllerUser : MonoBehaviour
     public void SetCalidad(int index)
     {
         calidad=index;
+    }
+
+    public void SetPosion(bool opcion)
+    {
+        isPosion = opcion;
     }
 }

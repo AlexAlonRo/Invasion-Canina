@@ -166,9 +166,9 @@ MonoBehaviour:
   weaponItemPrefab: {fileID: 73588626176294440, guid: 8eec85aae04ec7d4d852aed4ae666aa0, type: 3}
   maxCooldownTime: 1
   cooldownTime: 0.2
-  damage: 1
+  damage: 5
   type: 3
-  maxAmmo: 30
+  maxAmmo: 15
   bulletsPerShoot: 1
   shootPoint: {fileID: 5597463385473741945}
   maxDispersionAmount: 0.05
@@ -184,7 +184,7 @@ AudioSource:
   m_GameObject: {fileID: 780368075233864714}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ba264550a8f11c0478ab4f3c2ff29e83, type: 2}
   m_audioClip: {fileID: 8300000, guid: 40dc55ef18a0a83419964ea70aa35d6a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

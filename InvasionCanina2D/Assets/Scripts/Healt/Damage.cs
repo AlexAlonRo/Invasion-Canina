@@ -13,7 +13,7 @@ public class Damage : MonoBehaviour
             var playerHealth = other.GetComponent<Healt>();
             if (playerHealth != null)
             {
-                playerHealth.Damage(999);
+                playerHealth.Damage(999, this.transform.position);
             }
         }
     }

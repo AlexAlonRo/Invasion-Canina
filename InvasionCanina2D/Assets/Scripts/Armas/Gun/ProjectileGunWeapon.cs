@@ -16,7 +16,10 @@ public class ProjectileGunWeapon : GunWeapon
 
     protected override void ShootProjectile(Vector3 position, Vector3 direction)
     {
-        audioSource.Play();
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
 
 
         float angle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg) - 90;

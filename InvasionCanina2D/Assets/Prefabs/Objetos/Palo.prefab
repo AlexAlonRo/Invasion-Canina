@@ -81,7 +81,7 @@ MonoBehaviour:
   weaponItemPrefab: {fileID: 4734938894156588736, guid: 88e7d88463f7f954ba3893833b50291c, type: 3}
   maxCooldownTime: 1
   cooldownTime: 0.3
-  damage: 1
+  damage: 2
   hitSpot: {fileID: 7980977905362620917}
   range: 0.6
   gfx: {fileID: 6490731180927988806}
@@ -94,7 +94,7 @@ AudioSource:
   m_GameObject: {fileID: 4796005039747104291}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ba264550a8f11c0478ab4f3c2ff29e83, type: 2}
   m_audioClip: {fileID: 8300000, guid: 8243313101fcdbf4dba2a443bfc8d46c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

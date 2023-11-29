@@ -33,8 +33,10 @@ public class CQCWeapon : Weapon
     }
     IEnumerator Animate()
     {
-
-        audioSource.Play();
+        if (audioSource != null) {
+            audioSource.Play();
+        }
+        
 
 
         this.gfx.localRotation = Quaternion.Euler(0, 0, -80);

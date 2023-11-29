@@ -20,6 +20,7 @@ public class PersonajeMovement : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         this.lookingRight = true;
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
