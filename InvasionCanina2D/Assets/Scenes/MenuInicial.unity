@@ -11501,6 +11501,7 @@ MonoBehaviour:
   idUser: 
   nameUser: 
   score: 0
+  scoreA: 0
   personaje: 0
   calidad: 0
   volumen: 0
@@ -13094,7 +13095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1351291526
 RectTransform:
   m_ObjectHideFlags: 0
