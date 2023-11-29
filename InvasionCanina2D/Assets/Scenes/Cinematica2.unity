@@ -425,23 +425,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1523923427}
   lines:
-<<<<<<< Updated upstream
-  - "En el subterr\xE1neo, un laberinto mortal. Los mutantes dominan este desafiante
-    escenario."
-  - 'Los estudiantes, en busca de la Perra Madre, se topan con varios enemigos.Con
-    valentia sobre los mutantes, entregan todo en el campo de batalla. '
-  - "El enfrentamiento final emerge en un \xE9pico duelo. Alexander y Gerardo, armados
-    con valor, confrontan a la Perra Madre en una batalla por el destino de la humanidad."
-  TextSpeed: 0.08
-  DelayBeforeSceneLoad: 2
-  nivel: 2
-=======
   - "En los pasadizos subterr\xE1neos, el nido de los mutantes."
   - 'Los estudiantes encuentran la segunda parte de la formula para poder acabar
     con la perra madre. '
   - Se preparan para el enfrentamiento final.
-  TextSpeed: 0.1
->>>>>>> Stashed changes
+    TextSpeed: 0.08
+  DelayBeforeSceneLoad: 2
+  nivel: 2
+
 --- !u!1 &1276686762
 GameObject:
   m_ObjectHideFlags: 0
