@@ -45,6 +45,7 @@ public class Menu : MonoBehaviour
             titulo.text = "Pausa";
             Time.timeScale = 0f;
             btnpausa.SetActive(false);
+            btnSiguiente.SetActive(false);
             menu.SetActive(true);
             if (!estaActivo)
             {

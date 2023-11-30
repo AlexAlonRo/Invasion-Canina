@@ -87,7 +87,7 @@ public class MenuInicial : MonoBehaviour
     {
         ControllerUser.Instance.SetPosion(false);
         ControllerUser.Instance.personaje = index;
-        SceneManager.LoadScene("Cinematica2");
+        SceneManager.LoadScene("Cinematica1");
     }
 
     public void Niveles()
