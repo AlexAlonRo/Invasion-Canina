@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8175227519005277564}
   - component: {fileID: 229287511002350129}
   - component: {fileID: 1508363296321450705}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 1344677887, guid: 6f3471e1a66adb84a9196de78167b19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 5269255473166015703}
   - component: {fileID: 4171474036818832077}
   - component: {fileID: -8575996848645344768}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: redbull
   m_TagString: Untagged
   m_Icon: {fileID: 0}

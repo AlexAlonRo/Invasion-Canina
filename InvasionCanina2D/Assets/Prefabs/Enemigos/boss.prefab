@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4602787369286302672}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ViewPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7461693844395763816}
   - component: {fileID: 4365732590113053295}
   - component: {fileID: 8163118493192385942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 2185398769459360413}
   - component: {fileID: 6075083122138693096}
   - component: {fileID: 3429792312454393149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,9 +420,25 @@ PrefabInstance:
       propertyPath: damage
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 183827371755357346, guid: 8285b7b6c2054214fa22db7d40d45a0a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 367541673986117317, guid: 8285b7b6c2054214fa22db7d40d45a0a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 780368075233864714, guid: 8285b7b6c2054214fa22db7d40d45a0a, type: 3}
       propertyPath: m_Name
       value: ExtintorBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 780368075233864714, guid: 8285b7b6c2054214fa22db7d40d45a0a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249708554464842075, guid: 8285b7b6c2054214fa22db7d40d45a0a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3309434957005702834, guid: 8285b7b6c2054214fa22db7d40d45a0a, type: 3}
       propertyPath: m_LocalPosition.x

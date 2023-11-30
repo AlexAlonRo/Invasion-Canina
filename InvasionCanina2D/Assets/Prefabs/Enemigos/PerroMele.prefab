@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6420504209907626622}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ViewPiont
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 7925667623476149233}
   - component: {fileID: 8419357479566748498}
   - component: {fileID: 2189382908700603305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 2696485271810084859}
   - component: {fileID: 8460099190043399739}
   - component: {fileID: 8069837899418326368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PerroMele
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,9 +455,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3786794561076106948, guid: 9712394d31e263a4bacc3451a4655f9f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4796005039747104291, guid: 9712394d31e263a4bacc3451a4655f9f, type: 3}
       propertyPath: m_Name
       value: PaloPerro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796005039747104291, guid: 9712394d31e263a4bacc3451a4655f9f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703252055955956599, guid: 9712394d31e263a4bacc3451a4655f9f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

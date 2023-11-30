@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6244819362081091130}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ViewPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8413404689793309279}
   - component: {fileID: 1351616477925466378}
   - component: {fileID: 6970981356936312438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 4308763335253095913}
   - component: {fileID: 2855030293283632397}
   - component: {fileID: 3702911106845870640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PerroGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94853d6b4614694496f1a7d2b4f2f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 0.01
   aiTimeOut: 0.5
   attackRange: 9
   viewPoint: {fileID: 6244819362081091130}
@@ -317,6 +317,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PistolaPerro
       objectReference: {fileID: 0}
+    - target: {fileID: 898131936762402402, guid: b7b4e479066f76b4baa6d6083f9361d5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068608620611635007, guid: b7b4e479066f76b4baa6d6083f9361d5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2718503464548304933, guid: b7b4e479066f76b4baa6d6083f9361d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.64
@@ -356,6 +364,14 @@ PrefabInstance:
     - target: {fileID: 2718503464548304933, guid: b7b4e479066f76b4baa6d6083f9361d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850490496940198685, guid: b7b4e479066f76b4baa6d6083f9361d5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394554958150695535, guid: b7b4e479066f76b4baa6d6083f9361d5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6318317822759447300, guid: b7b4e479066f76b4baa6d6083f9361d5, type: 3}
       propertyPath: range

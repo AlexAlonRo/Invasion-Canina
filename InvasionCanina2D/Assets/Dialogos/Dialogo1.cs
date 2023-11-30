@@ -93,8 +93,17 @@ public class Dialogo1 : MonoBehaviour
     {
         yield return new WaitForSeconds(DelayBeforeSceneLoad);
 
-        Debug.Log(nivel);
-        SceneManager.LoadScene(ControllerUser.Instance.personaje ==1? $"Nivel{nivel}":$"Nivel{nivel}T");
+        string snivel = string.Empty;
+        if (nivel == 0)
+        {
+            snivel = "MenuInicial";
+        }
+        else
+        {
+            snivel = ControllerUser.Instance.personaje == 1 ? $"Nivel{nivel}" : $"Nivel{nivel}T";
+        }
+        Debug.Log(snivel);
+        SceneManager.LoadScene(snivel);
     }
     // Puedes llamar a este método desde un botón u otro evento para avanzar manualmente en el diálogo
     public void OnButtonClick()

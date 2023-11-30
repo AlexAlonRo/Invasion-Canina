@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 546924776996720988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ViewPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2009716746895734986}
   - component: {fileID: 7958411251745173768}
   - component: {fileID: 3480274323952208933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 7777212551309308750}
   - component: {fileID: 454024262959899459}
   - component: {fileID: 4589576182273166501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PerroRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,9 +430,25 @@ PrefabInstance:
       propertyPath: damage
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 183827371755357346, guid: daaf338d2d2a25a4580ff159ca3fe4f6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 367541673986117317, guid: daaf338d2d2a25a4580ff159ca3fe4f6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 780368075233864714, guid: daaf338d2d2a25a4580ff159ca3fe4f6, type: 3}
       propertyPath: m_Name
       value: ExtintorPerro
+      objectReference: {fileID: 0}
+    - target: {fileID: 780368075233864714, guid: daaf338d2d2a25a4580ff159ca3fe4f6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249708554464842075, guid: daaf338d2d2a25a4580ff159ca3fe4f6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3309434957005702834, guid: daaf338d2d2a25a4580ff159ca3fe4f6, type: 3}
       propertyPath: m_LocalPosition.x
