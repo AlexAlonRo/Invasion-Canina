@@ -344,11 +344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3559272647925790992, guid: 51af249e461485c48a544b6456daf8d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 120.6
+      value: 121.06
       objectReference: {fileID: 0}
     - target: {fileID: 3559272647925790992, guid: 51af249e461485c48a544b6456daf8d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 3559272647925790992, guid: 51af249e461485c48a544b6456daf8d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10775,11 +10775,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 636288264656821376, guid: b5a09b7337266e84c9318a6b24ca8ba7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58
+      value: 57.6
       objectReference: {fileID: 0}
     - target: {fileID: 636288264656821376, guid: b5a09b7337266e84c9318a6b24ca8ba7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 636288264656821376, guid: b5a09b7337266e84c9318a6b24ca8ba7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11941,11 +11941,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1945424896231320738, guid: 134097644b743f243b971de65eb24a3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 88.6
+      value: 88.5
       objectReference: {fileID: 0}
     - target: {fileID: 1945424896231320738, guid: 134097644b743f243b971de65eb24a3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 1945424896231320738, guid: 134097644b743f243b971de65eb24a3e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15451,7 +15451,7 @@ GameObject:
   - component: {fileID: 1297360278}
   - component: {fileID: 1297360279}
   m_Layer: 7
-  m_Name: Alexander
+  m_Name: Tona
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15498,7 +15498,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1339883297, guid: d8f3004655c39de429808826e657dc30, type: 3}
+  m_Sprite: {fileID: -409016860, guid: d2864c8ab49d4a34dbbb67f2c122f51b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15611,7 +15611,7 @@ Animator:
   m_GameObject: {fileID: 1297360270}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 86de73fbc9cdd654ab1eb3bd0ddda103, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8215f6fd10a8aef4ea8b0239babd631f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16356,7 +16356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuContenedor: {fileID: 793829631}
   nivel: 2
-  personaje: 1
+  personaje: 2
 --- !u!61 &1362351287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23390,13 +23390,13 @@ SceneRoots:
   - {fileID: 611634699}
   - {fileID: 16193370}
   - {fileID: 4430919370482003852}
-  - {fileID: 1362351288}
-  - {fileID: 1752143135}
-  - {fileID: 8640425889517454535}
-  - {fileID: 5456980}
   - {fileID: 1973793838}
   - {fileID: 1019604760}
   - {fileID: 741172964}
   - {fileID: 433172207}
   - {fileID: 1413725515}
   - {fileID: 1956420749}
+  - {fileID: 8640425889517454535}
+  - {fileID: 1362351288}
+  - {fileID: 5456980}
+  - {fileID: 1752143135}

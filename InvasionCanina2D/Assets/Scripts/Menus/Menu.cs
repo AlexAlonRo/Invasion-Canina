@@ -90,7 +90,6 @@ public class Menu : MonoBehaviour
 
     public void FinJuego()
     {
-        bool estaActivo = btnOpciones.activeSelf;
         if (menu != null && btnpausa != null && titulo != null)
         {
             titulo.text = string.Empty;
@@ -98,15 +97,10 @@ public class Menu : MonoBehaviour
             Time.timeScale = 0f;
             btnpausa.SetActive(false);
             menu.SetActive(true);
-            if (!estaActivo)
-            {
+
                 btnOpciones.SetActive(true);
                 btnSiguiente.SetActive(false);
-            }
-            if (!btnSalir.activeSelf)
-            {
-                btnSalir.SetActive(true);
-            }
+
             int puntaje = ControllerUser.Instance.GetScore();
             puntaje = puntaje > 0 ? puntaje : ControllerUser.Instance.GetScoreA();
             labelScore.text = $"Puntaje : {puntaje}";
@@ -153,7 +147,24 @@ public class Menu : MonoBehaviour
                 btnSiguiente.SetActive(true);
             }
         }
-        
+        if (Nivel == 3)
+        {
+            labelScore.text = $"Puntaje : {puntaje}";
+            titulo.text = string.Empty;
+            titulo.text = "GANASTE";
+            Time.timeScale = 0f;
+            btnpausa.SetActive(false);
+            menu.SetActive(true);
+            btnOpciones.SetActive(false);
+            btnSiguiente.SetActive(true);
+            btnSalir.SetActive(false);
+            string idScore = EnvioDatos(puntaje, Nivel, Personaje);
+
+            if (idScore != null)
+            {
+                btnSiguiente.SetActive(true);
+            }
+        }
 
     }
 

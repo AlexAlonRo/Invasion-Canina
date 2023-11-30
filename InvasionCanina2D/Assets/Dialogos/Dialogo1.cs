@@ -41,9 +41,17 @@ public class Dialogo1 : MonoBehaviour
         if (index == lines.Length - 1)
         {
             yield return new WaitForSeconds(DelayBeforeSceneLoad);
-            string nivel = ControllerUser.Instance.personaje == 1 ? $"Nivel1" : $"Nivel1T";
-            Debug.Log(nivel);
-            SceneManager.LoadScene(nivel);
+            string snivel = string.Empty;
+            if (nivel == 0)
+            {
+                snivel = "MenuInicial";
+            }
+            else
+            {
+                snivel = ControllerUser.Instance.personaje == 1 ? $"Nivel{nivel}" : $"Nivel{nivel}T";
+            }
+            Debug.Log(snivel);
+            SceneManager.LoadScene(snivel);
         }
     }
 

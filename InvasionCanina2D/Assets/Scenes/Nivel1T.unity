@@ -22007,7 +22007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuContenedor: {fileID: 793829631}
-  nivel: 2
+  nivel: 1
   personaje: 2
 --- !u!61 &1362351287
 BoxCollider2D:
