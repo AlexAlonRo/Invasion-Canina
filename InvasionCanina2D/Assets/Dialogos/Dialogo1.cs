@@ -10,9 +10,10 @@ public class Dialogo1 : MonoBehaviour
     public string[] lines;
     public float TextSpeed = 0.01f;
     public float DelayBeforeSceneLoad = 2f;
-    public int nivel;
+    [SerializeField] public int nivel;
     private int index;
     private bool isDialogueInProgress;
+
 
     void Start()
     {
@@ -81,6 +82,8 @@ public class Dialogo1 : MonoBehaviour
     IEnumerator WaitAndLoadScene()
     {
         yield return new WaitForSeconds(DelayBeforeSceneLoad);
+
+        Debug.Log(nivel);
         SceneManager.LoadScene(ControllerUser.Instance.personaje ==1? $"Nivel{nivel}":$"Nivel{nivel}T");
     }
     // Puedes llamar a este método desde un botón u otro evento para avanzar manualmente en el diálogo

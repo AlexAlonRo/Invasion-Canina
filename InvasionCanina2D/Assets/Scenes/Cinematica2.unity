@@ -428,11 +428,9 @@ MonoBehaviour:
   - "En los pasadizos subterr\xE1neos, el nido de los mutantes."
   - 'Los estudiantes encuentran la segunda parte de la formula para poder acabar
     con la perra madre. '
-  - Se preparan para el enfrentamiento final.
-    TextSpeed: 0.08
+  TextSpeed: 0.01
   DelayBeforeSceneLoad: 2
   nivel: 2
-
 --- !u!1 &1276686762
 GameObject:
   m_ObjectHideFlags: 0
