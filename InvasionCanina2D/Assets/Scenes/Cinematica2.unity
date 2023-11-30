@@ -420,7 +420,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 620050125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b3e39331cb317d42b3f8ac5c16c53be, type: 3}
+  m_Script: {fileID: 11500000, guid: e0971f01307db274c8c5bb6fd76bac4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1523923427}
@@ -430,7 +430,7 @@ MonoBehaviour:
     con la perra madre. '
   TextSpeed: 0.01
   DelayBeforeSceneLoad: 2
-  nivel: 2
+  nivel: 0
 --- !u!1 &1276686762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,7 +1064,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 620050129}
-        m_TargetAssemblyTypeName: Dialogo1, Assembly-CSharp
+        m_TargetAssemblyTypeName: Dialogo2, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:

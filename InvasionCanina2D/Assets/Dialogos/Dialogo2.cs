@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Dialogo1 : MonoBehaviour
+public class Dialogo2 : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public string[] lines;
@@ -41,7 +41,7 @@ public class Dialogo1 : MonoBehaviour
         if (index == lines.Length - 1)
         {
             yield return new WaitForSeconds(DelayBeforeSceneLoad);
-            string nivel = ControllerUser.Instance.personaje == 1 ? $"Nivel1" : $"Nivel1T";
+            string nivel = ControllerUser.Instance.personaje == 1 ? $"Nivel2" : $"Nivel2T";
             Debug.Log(nivel);
             SceneManager.LoadScene(nivel);
         }
@@ -84,9 +84,9 @@ public class Dialogo1 : MonoBehaviour
     IEnumerator WaitAndLoadScene()
     {
         yield return new WaitForSeconds(DelayBeforeSceneLoad);
-
+        string nivel = ControllerUser.Instance.personaje == 1 ? $"Nivel2" : $"Nivel2T";
         Debug.Log(nivel);
-        SceneManager.LoadScene(ControllerUser.Instance.personaje ==1? $"Nivel{nivel}":$"Nivel{nivel}T");
+        SceneManager.LoadScene(nivel);
     }
     // Puedes llamar a este método desde un botón u otro evento para avanzar manualmente en el diálogo
     public void OnButtonClick()
