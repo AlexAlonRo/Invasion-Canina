@@ -27,7 +27,7 @@ public class Menu : MonoBehaviour
     public Toggle PantallaCompleta;
     public Slider Volumen;
     public TMP_Dropdown Calidad;
-
+    
     void Start()
     {
     }
