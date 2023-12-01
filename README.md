@@ -23,12 +23,25 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 
 # Personajes
 
-| Nombre del Personaje | Imagen | Descripción | Enlace |
+| Nombre del Personaje | Imagen | Descripción | Enlace | Habilidades |
+|----------------------|--------|-------------|--------|--------------|
+| Alexander            | ![Alex](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/94e7a60d-3762-4642-8852-29540fe8176e) | Estudiante valiente y determinado. Se aventura para detener la invasión de los perros mutantes en la UTNG. | https://github.com/AlexAlonRo/Invasion-Canina/tree/main/Recursos%20del%20Juego/Alexander | Al escojer al personaje de Alexander tendras la ventaja de correr mas rapido, pero cuidado ya que su nivel de brinco sera menor. |
+| Gerardo              | ![Tona](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/42eae8ce-7ae1-4f18-b7b5-f4a184f30a03) | Amigo leal de Alexander. Se une a la lucha para salvar la universidad de la invasión de los perros mutantes. | https://github.com/AlexAlonRo/Invasion-Canina/tree/main/Recursos%20del%20Juego/Tonathiu | Al escojer al personaje deTona tendras la ventaja de brincar mas alto, pero su nivel de velocidad sera menor. |
+
+# Enemigos
+
+| Nombre del Enemigo   | Imagen | Descripción | Enlace |
 |----------------------|--------|-------------|--------|
-| Alexander            | ![Alex](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/94e7a60d-3762-4642-8852-29540fe8176e) | Estudiante valiente y determinado. Se aventura para detener la invasión de los perros mutantes en la UTNG. | [Perfil de Alexander](link_perfil) |
-| Gerardo              | ![Tona](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/42eae8ce-7ae1-4f18-b7b5-f4a184f30a03) | Amigo leal de Alexander. Se une a la lucha para salvar la universidad de la invasión de los perros mutantes. | [Perfil de Gerardo](link_perfil) |
-
-
+| Perro Mutante Tipo A  | ![enemigo1](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/258a5c1a-8f5b-4b6e-ae7f-ef6e88ada2ac)
+ | Ágil y feroz, ataca en manada. Escurridizo y rápido en sus movimientos. | [Perfil del Enemigo Tipo A](link_perfil) |
+| Perro Mutante Tipo B  | ![enemigo2](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/d3239f6a-16d5-4197-b950-018d7b1812c2)
+ | Robusto y resistente, ataca con embestidas poderosas. Más lento pero con gran fuerza. | [Perfil del Enemigo Tipo B](link_perfil) |
+| Perro Mutante Tipo C  | ![enemigo3](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/d73ef95c-8015-46aa-b5d9-16b5c0ac9d7f)
+ | Astuto y sigiloso, acecha desde la oscuridad. Utiliza tácticas de emboscada. | [Perfil del Enemigo Tipo C](link_perfil) |
+| Perro Mutante Tipo D  | ![enemigo4](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/c0cc3a3f-5fa8-4abd-a6f0-cc2528b519d9)
+ | Ágil y versátil, utiliza saltos y movimientos evasivos. Esquivo y difícil de golpear. | [Perfil del Enemigo Tipo D](link_perfil) |
+| Perra Madre          | ![PerraMadre](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/13e66081-514c-4507-a7f6-05cc560d265c)
+| Líder de los perros mutantes, poderosa y estratégica. Controla a los demás mutantes. | [Perfil de la Perra Madre](link_perfil) |
 
 
 # Reglas del Juego
@@ -46,6 +59,7 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 - Solo podras llevar 1 arma a la vez
 
 - No podras dar mas de 2 saltos
+
 
 
 # Aditamientos
