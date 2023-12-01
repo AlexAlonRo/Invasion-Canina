@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57906d8385e68674fb8ef6d6ee6b86cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
+  maxHealth: 10
   isPlayer: 0
   puntaje: 300
 --- !u!114 &3702911106845870640
