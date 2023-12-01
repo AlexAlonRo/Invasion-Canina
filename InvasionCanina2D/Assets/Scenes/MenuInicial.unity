@@ -1294,10 +1294,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ">>No puede tomar do armas\r\n\n>>Si estas con la vida al tope no te puedes
-    curar\r\n\n>>Si tienes la municio a tope no podras llevar mas\n\n>>Si caes en
-    los agujeros moriras automaticamente \r\n\n>>Solo podras llevar 1 arma a la vez\r\n\n>>No
-    podras dar mas de 2 saltos\r\n"
+  m_text: ">>Solo podras pasar de nivel si recolectas las posicones \n\n>>No puede
+    tomar dos armas\r\n\n>>Si estas con la vida al tope no te puedes curar\r\n\n>>Si
+    tienes la municio a tope no podras llevar mas\n\n>>Si caes en los agujeros moriras
+    automaticamente \r\n\n>>Solo podras llevar 1 arma a la vez\r\n\n>>No podras dar
+    mas de 2 saltos\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -5806,11 +5807,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Somos dos estudiantes de la UTNG comenzaron un proyecto de videojuego
-    como parte de un trabajo escolar. Lo que inici\xF3 como un proyecto m\xE1s se
-    convirti\xF3 en una experiencia emocionante. Aprendimos a programar y dejamos
-    volar nuestra imaginaci\xF3n con la historia, personajes y armas. Este proyecto
-    se volvi\xF3 especial para nosotros.\n"
+  m_text: 'HABILIDADES
+
+
+    Al escojer al personaje de Alexander tendras la ventaja
+    de correr mas rapido, pero cuidado ya que su nivel de brinco sera menor.
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -5837,14 +5841,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5873,7 +5877,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 139.805, z: -560.5801, w: 32.0371}
+  m_margin: {x: 0, y: 159.7909, z: -560.5801, w: 32.0371}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12991,8 +12995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -182, y: 0}
-  m_SizeDelta: {x: 796.8386, y: 476.0471}
+  m_AnchoredPosition: {x: -171.74, y: 81.889}
+  m_SizeDelta: {x: 808.7555, y: 312.1914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1199271849
 MonoBehaviour:
@@ -16398,8 +16402,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -197.43, y: -42.365875}
-  m_SizeDelta: {x: 691.01, y: 438.8806}
+  m_AnchoredPosition: {x: -184.82417, y: -56.188236}
+  m_SizeDelta: {x: 756.2185, y: 553.6476}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478515174
 MonoBehaviour:
@@ -22460,11 +22464,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Somos dos estudiantes de la UTNG comenzaron un proyecto de videojuego
-    como parte de un trabajo escolar. Lo que inici\xF3 como un proyecto m\xE1s se
-    convirti\xF3 en una experiencia emocionante. Aprendimos a programar y dejamos
-    volar nuestra imaginaci\xF3n con la historia, personajes y armas. Este proyecto
-    se volvi\xF3 especial para nosotros.\n"
+  m_text: 'HABILIDADES
+
+
+    Al escojer al personaje deTona tendras la ventaja de
+    brincar mas alto, pero su nivel de velocidad sera menor.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -22491,14 +22497,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -22527,7 +22533,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 139.805, z: -560.5801, w: 32.0371}
+  m_margin: {x: 0, y: 139.805, z: -614.2055, w: 198.87204}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -22575,8 +22581,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 191, y: 5.089}
-  m_SizeDelta: {x: 796.8386, y: 476.0471}
+  m_AnchoredPosition: {x: 190.08, y: 43}
+  m_SizeDelta: {x: 786.396, y: 359.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075362562
 MonoBehaviour:
