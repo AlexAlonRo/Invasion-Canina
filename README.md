@@ -32,16 +32,11 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 
 | Nombre del Enemigo   | Imagen | Descripción | Enlace |
 |----------------------|--------|-------------|--------|
-| Perro Mutante Tipo A  | ![enemigo1](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/258a5c1a-8f5b-4b6e-ae7f-ef6e88ada2ac)
- | Ágil y feroz, ataca en manada. Escurridizo y rápido en sus movimientos. | [Perfil del Enemigo Tipo A](link_perfil) |
-| Perro Mutante Tipo B  | ![enemigo2](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/d3239f6a-16d5-4197-b950-018d7b1812c2)
- | Robusto y resistente, ataca con embestidas poderosas. Más lento pero con gran fuerza. | [Perfil del Enemigo Tipo B](link_perfil) |
-| Perro Mutante Tipo C  | ![enemigo3](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/d73ef95c-8015-46aa-b5d9-16b5c0ac9d7f)
- | Astuto y sigiloso, acecha desde la oscuridad. Utiliza tácticas de emboscada. | [Perfil del Enemigo Tipo C](link_perfil) |
-| Perro Mutante Tipo D  | ![enemigo4](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/c0cc3a3f-5fa8-4abd-a6f0-cc2528b519d9)
- | Ágil y versátil, utiliza saltos y movimientos evasivos. Esquivo y difícil de golpear. | [Perfil del Enemigo Tipo D](link_perfil) |
-| Perra Madre          | ![PerraMadre](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/13e66081-514c-4507-a7f6-05cc560d265c)
-| Líder de los perros mutantes, poderosa y estratégica. Controla a los demás mutantes. | [Perfil de la Perra Madre](link_perfil) |
+| Perro Mutante Tipo A  | ![enemigo1](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/258a5c1a-8f5b-4b6e-ae7f-ef6e88ada2ac) | Ágil y feroz, ataca en manada. Escurridizo y rápido en sus movimientos. | [Perfil del Enemigo Tipo A](link_perfil) |
+| Perro Mutante Tipo B  | ![enemigo2](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/d3239f6a-16d5-4197-b950-018d7b1812c2) | Robusto y resistente, ataca con embestidas poderosas. Más lento pero con gran fuerza. | [Perfil del Enemigo Tipo B](link_perfil) |
+| Perro Mutante Tipo C  | ![enemigo3](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/d73ef95c-8015-46aa-b5d9-16b5c0ac9d7f) | Astuto y sigiloso, acecha desde la oscuridad. Utiliza tácticas de emboscada. | [Perfil del Enemigo Tipo C](link_perfil) |
+| Perro Mutante Tipo D  | ![enemigo4](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/c0cc3a3f-5fa8-4abd-a6f0-cc2528b519d9) | Ágil y versátil, utiliza saltos y movimientos evasivos. Esquivo y difícil de golpear. | [Perfil del Enemigo Tipo D](link_perfil) |
+| Perra Madre          | ![PerraMadre](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/13e66081-514c-4507-a7f6-05cc560d265c) | Líder de los perros mutantes, poderosa y estratégica. Controla a los demás mutantes. | [Perfil de la Perra Madre](link_perfil) |
 
 
 # Reglas del Juego
