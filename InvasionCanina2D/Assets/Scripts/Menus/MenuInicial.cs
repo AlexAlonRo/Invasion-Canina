@@ -18,6 +18,7 @@ public class MenuInicial : MonoBehaviour
     public GameObject btnranking;
     public GameObject iconoN1;
     public GameObject iconoN2;
+    public GameObject iconoN3;
 
     public TMP_Text labelTitulo;
     public TMP_Text labelMensaje;
@@ -88,6 +89,7 @@ public class MenuInicial : MonoBehaviour
         ControllerUser.Instance.SetPosion(false);
         ControllerUser.Instance.personaje = index;
         SceneManager.LoadScene("Cinematica1");
+        //SceneManager.LoadScene("CinematicaFinal");
     }
 
     public void Niveles()
@@ -173,7 +175,7 @@ public class MenuInicial : MonoBehaviour
     }
     public void Ranking(int nivel)
     {
-        if(nivel == 3)
+        if(nivel == 4)
         {
             ranking.SetActive(true);
             home.SetActive(false);
@@ -184,13 +186,20 @@ public class MenuInicial : MonoBehaviour
         {
             iconoN1.SetActive(true);
             iconoN2.SetActive(false);
+            iconoN3.SetActive(false);
         }
-        else
+        if (nivel == 2)
         {
             iconoN1.SetActive(false);
             iconoN2.SetActive(true);
+            iconoN3.SetActive(false);
         }
-
+        if (nivel == 3)
+        {
+            iconoN1.SetActive(false);
+            iconoN2.SetActive(false);
+            iconoN3.SetActive(true);
+        }
 
         ConexionBD conexion = new ConexionBD();
         var coleccion = conexion.ConexionMongo2();
