@@ -25,8 +25,8 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 
 | Nombre del Personaje | Imagen | Descripción | Enlace | Habilidades |
 |----------------------|--------|-------------|--------|--------------|
-| Alexander            | [Perfil de Alex](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/Recursos%20del%20Juego/Alexander) | Estudiante valiente y determinado. Se aventura para detener la invasión de los perros mutantes en la UTNG. | https://github.com/AlexAlonRo/Invasion-Canina/tree/main/Recursos%20del%20Juego/Alexander | Al escojer al personaje de Alexander tendras la ventaja de correr mas rapido, pero cuidado ya que su nivel de brinco sera menor. |
-| Gerardo              | [Perfil de Alex](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/Recursos%20del%20Juego/Tonathiu)  | Amigo leal de Alexander. Se une a la lucha para salvar la universidad de la invasión de los perros mutantes. | https://github.com/AlexAlonRo/Invasion-Canina/tree/main/Recursos%20del%20Juego/Tonathiu | Al escojer al personaje deTona tendras la ventaja de brincar mas alto, pero su nivel de velocidad sera menor. |
+| Alexander            |![Alex](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/b45c2735-be7a-4e5f-a605-7412dde15958) | Estudiante valiente y determinado. Se aventura para detener la invasión de los perros mutantes en la UTNG. | [Perfil de Alex](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/Recursos%20del%20Juego/Alexander)  | Al escojer al personaje de Alexander tendras la ventaja de correr mas rapido, pero cuidado ya que su nivel de brinco sera menor. |
+| Gerardo              | ![Tona](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/3b19ebfc-4e7e-4850-8f15-ec4575ad1ed7) | Amigo leal de Alexander. Se une a la lucha para salvar la universidad de la invasión de los perros mutantes. | [Perfil de Alex](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/Recursos%20del%20Juego/Tonathiu)  | Al escojer al personaje deTona tendras la ventaja de brincar mas alto, pero su nivel de velocidad sera menor. |
 
 # Enemigos
 
