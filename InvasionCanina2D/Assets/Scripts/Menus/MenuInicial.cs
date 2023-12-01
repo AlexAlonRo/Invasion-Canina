@@ -2,7 +2,6 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Linq;
 using TMPro;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
@@ -170,8 +169,8 @@ public class MenuInicial : MonoBehaviour
     {
         nombreJugador.text = string.Empty;
         Debug.Log("Salir...");
-        PlayerPrefs.DeleteKey("idUsuario");
-        PlayerPrefs.DeleteKey("usuario");
+        //PlayerPrefs.DeleteKey("idUsuario");
+        //PlayerPrefs.DeleteKey("usuario");
         Application.Quit();
     }
     public void Ranking(int nivel)
