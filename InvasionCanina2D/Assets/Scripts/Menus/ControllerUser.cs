@@ -26,6 +26,9 @@ public class ControllerUser : MonoBehaviour
             Destroy(gameObject);
         }
         scoreA = 0;
+        isPantallaCompleta = true;
+        volumen = 0;
+        calidad = 2;
     }
 
     public void InicioSession(string id, string name) 

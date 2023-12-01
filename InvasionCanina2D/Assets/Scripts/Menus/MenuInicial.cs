@@ -5,6 +5,7 @@ using TMPro;
 using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class MenuInicial : MonoBehaviour
@@ -175,14 +176,14 @@ public class MenuInicial : MonoBehaviour
     }
     public void Ranking(int nivel)
     {
-        if(nivel == 4)
+        if (nivel == 4)
         {
             ranking.SetActive(true);
             home.SetActive(false);
             nivel = 1;
         }
-        
-        if(nivel == 1)
+
+        if (nivel == 1)
         {
             iconoN1.SetActive(true);
             iconoN2.SetActive(false);
@@ -203,8 +204,8 @@ public class MenuInicial : MonoBehaviour
 
         ConexionBD conexion = new ConexionBD();
         var coleccion = conexion.ConexionMongo2();
-
-        var filtro = Builders<BsonDocument>.Filter.Eq("nivel", nivel);
+        string idUserA = PlayerPrefs.GetString("idUsuario");
+        var filtro = Builders<BsonDocument>.Filter.Eq("nivel", nivel) ;
         var usuariosTopScore = coleccion.Find(filtro)
             .Sort(Builders<BsonDocument>.Sort.Descending("score"))
             .Limit(10)
@@ -233,7 +234,7 @@ public class MenuInicial : MonoBehaviour
                 }
 
                 Debug.Log($"{position} - {name} - {score},");
-                if(position == 1)
+                if (position == 1)
                 {
                     row.rank.color = Color.green;
                     row.name.color = Color.green;
@@ -263,7 +264,14 @@ public class MenuInicial : MonoBehaviour
 
             }
         }
-
+        else {
+            DeleteAllChildren();
+            var row = Instantiate(rowUi, tableContainer.transform).GetComponent<RowUi>();
+            row.rank.text = "N/A";
+            row.name.text = "N/A";
+            row.score.text = "N/A";
+            row.trophy.enabled = false;
+        }
     }
 
     void DeleteAllChildren()
