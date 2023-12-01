@@ -21,8 +21,32 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 
 ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/f039aeef-444b-4a64-9af6-94a7e68ba6e1)
 
+# Personajes
+
+| Nombre del Personaje | Imagen | Descripción | Enlace |
+|----------------------|--------|-------------|--------|
+| Alexander            | ![Alex](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/94e7a60d-3762-4642-8852-29540fe8176e) | Estudiante valiente y determinado. Se aventura para detener la invasión de los perros mutantes en la UTNG. | [Perfil de Alexander](link_perfil) |
+| Gerardo              | ![Tona](https://github.com/AlexAlonRo/Invasion-Canina/assets/97119823/42eae8ce-7ae1-4f18-b7b5-f4a184f30a03) | Amigo leal de Alexander. Se une a la lucha para salvar la universidad de la invasión de los perros mutantes. | [Perfil de Gerardo](link_perfil) |
+
+
+
 
 # Reglas del Juego
+
+- Solo podras pasar de nivel si recolectas las posicones 
+
+- No puede tomar dos armas
+
+- Si estas con la vida al tope no te puedes curar
+
+- Si tienes la municio a tope no podras llevar mas
+
+- Si caes en los agujeros moriras automaticamente 
+
+- Solo podras llevar 1 arma a la vez
+
+- No podras dar mas de 2 saltos
+
 
 # Aditamientos
 | Nombre | Tipo | Imagen | Descripción | Uso |
@@ -32,7 +56,8 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 | Pistola de clavos | Arma | ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/021c8482-5f50-4ab6-99fc-ee755f7e19e0) |  La pistola de clavos es tu mejor opción cuando necesitas mantener a raya | Cargada con clavos afilados, esta arma dispara proyectiles mortales que pueden perforar a tus enemigos con precisión. |
 | Redbull | Cura | ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/59345be9-b2ae-44d4-96ee-487f908d5b85) | Una bebida energética revigorizante que proporciona la mitad de recuperacion que el botiquin | Al consumirlo, tu personaje recuperará una cantidad del 15% de salud.  |
 | Botiquin | Cura | ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/8ff28741-6357-4416-b657-5b0fbc2095ae) | Es un elemento de curación esencial en tu lucha contra los perros mutantes. | Al usarlo, tu personaje recuperará una cantidad del 30% de salud. |
-| Posion 1 | Posion |  ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/7dee6219-ad50-4a4f-8e0a-39aa6d7cc344) | Es un elemento que se tendra que recolectar en cada nicel para finaluzarlo ya que sin la posion no se podra derrotar a la perra madre | Recolectable |
+| Posion 1 | Posion |  ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/7dee6219-ad50-4a4f-8e0a-39aa6d7cc344) | Es un elemento que se tendra que recolectar en el nivel 1 para finaluzarlo ya que sin la posion no se podra derrotar a la perra madre | Recolectable |
+| Posion 2 | Posion |  ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/7dee6219-ad50-4a4f-8e0a-39aa6d7cc344) | Es un elemento que se tendra que recolectar en el nivel 2 para finaluzarlo ya que sin la posion no se podra derrotar a la perra madre | Recolectable |
 
 # Trello
 https://trello.com/invite/invasioncanina/ATTI50dee33ebc4d73bc0098fd75f257afdb842394CB
