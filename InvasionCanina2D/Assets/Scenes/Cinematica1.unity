@@ -461,7 +461,7 @@ MonoBehaviour:
     inteligentes. '
   - Los estudiantes juran defender la universidad.
   TextSpeed: 0.1
-  DelayBeforeSceneLoad: 2
+  DelayBeforeSceneLoad: 0.8
   nivel: 1
 --- !u!1 &644372471
 GameObject:
