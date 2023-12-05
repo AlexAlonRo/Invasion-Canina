@@ -68,5 +68,21 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 | Posion 1 | Posion |  ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/7dee6219-ad50-4a4f-8e0a-39aa6d7cc344) | Es un elemento que se tendra que recolectar en el nivel 1 para finaluzarlo ya que sin la posion no se podra derrotar a la perra madre | Recolectable |
 | Posion 2 | Posion |  ![image](https://github.com/AlexAlonRo/Invasion-Canina/assets/88992807/7dee6219-ad50-4a4f-8e0a-39aa6d7cc344) | Es un elemento que se tendra que recolectar en el nivel 2 para finaluzarlo ya que sin la posion no se podra derrotar a la perra madre | Recolectable |
 
+# Codigo del proyecto
+
+| Codigo del proyecto | Enlace |
+|---------------------|--------|
+| Web                      | [Nombre de la Plataforma Web](link_web) |
+| Móvil                    | [Nombre de la Plataforma Móvil](link_movil) |
+| Escritorio               | [Nombre de la Plataforma de Escritorio](link_escritorio) |
+
+# APKS 
+| Plataforma de Despliegue | Enlace |
+|--------------------------|--------|
+| Web                      | [Nombre de la Plataforma Web](link_web) |
+| Móvil                    | [Nombre de la Plataforma Móvil](link_movil) |
+| Escritorio               | [Nombre de la Plataforma de Escritorio](link_escritorio) |
+
+
 # Trello
 https://trello.com/invite/invasioncanina/ATTI50dee33ebc4d73bc0098fd75f257afdb842394CB
