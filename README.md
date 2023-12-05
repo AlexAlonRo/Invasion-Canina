@@ -72,21 +72,21 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 
 | Codigo del proyecto | Enlace |
 |---------------------|--------|
-| Web                      | [Nombre de la Plataforma Web](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/InvasionCanina2D) |
-| Móvil                    | [Nombre de la Plataforma Móvil](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/InvasionCanina2D-Movil) |
-| Escritorio               | [Nombre de la Plataforma de Escritorio](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/InvasionCanina2D) |
+| Web                      | [Plataforma Web](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/InvasionCanina2D) |
+| Móvil                    | [Plataforma Móvil](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/InvasionCanina2D-Movil) |
+| Escritorio               | [Plataforma de Escritorio](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/InvasionCanina2D) |
 
 # APKS 
 | Plataforma de Despliegue | Enlace |
 |--------------------------|--------|
-| Web                      | [Nombre de la Plataforma Web](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/Webgl) |
-| Móvil                    | [Nombre de la Plataforma Móvil](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/Movil) |
-| Escritorio               | [Nombre de la Plataforma de Escritorio](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/PC) |
+| Web                      | [Plataforma Web](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/Webgl) |
+| Móvil                    | [Plataforma Móvil](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/Movil) |
+| Escritorio               | [Plataforma de Escritorio](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/PC) |
 
 # Aspectos Legales
 | Aspectos Legales | Enlace |
 |--------------------------|--------|
-| Aspectos Legales | [Nombre de la Plataforma Web](https://github.com/AlexAlonRo/Invasion-Canina/blob/main/Aspectos%20legales%20del%20videojuego%20Saber.pdf) |
+| Aspectos Legales | [Documento](https://github.com/AlexAlonRo/Invasion-Canina/blob/main/Aspectos%20legales%20del%20videojuego%20Saber.pdf) |
 
 
 # Trello
