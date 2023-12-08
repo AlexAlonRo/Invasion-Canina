@@ -79,7 +79,7 @@ El contenido por lo general es apto para personas de 13 años o más. Puede que 
 # APKS 
 | Plataforma de Despliegue | Enlace |
 |--------------------------|--------|
-| Web                      | [Plataforma Web](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/Webgl) |
+| Web                      | [Plataforma Web](https://play.unity.com/mg/other/webgl-f5r) |
 | Móvil                    | [Plataforma Móvil](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/Movil) |
 | Escritorio               | [Plataforma de Escritorio](https://github.com/AlexAlonRo/Invasion-Canina/tree/main/apks/PC) |
 
