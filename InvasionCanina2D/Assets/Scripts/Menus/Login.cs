@@ -51,46 +51,61 @@ public class Login : MonoBehaviour
 
     public void EnvioDatos(string sUsuario, string sContrasena)
     {
-        ConexionBD conexion = new ConexionBD();
-        var coleccion = conexion.ConexionMongo();
-
-        var filtro = Builders<BsonDocument>.Filter.Eq("Usuario", sUsuario) & Builders<BsonDocument>.Filter.Eq("Contrasena", sContrasena);
-        var usuarioE = coleccion.Find(filtro).FirstOrDefault();
-
-        if (usuarioE != null)
+        try 
         {
-            string idUsuario = usuarioE["_id"].ToString();
-            string usuario = usuarioE["Usuario"].ToString();
-            PlayerPrefs.SetString("idUsuario", idUsuario);
-            PlayerPrefs.SetString("usuario", usuario);
-            //Debug.Log("ID del documento insertado: " + idUsuario);
-            ControllerUser.Instance.InicioSession(idUsuario, usuario);
-            if (home != null && login != null && ranking != null)
+            ConexionBD conexion = new ConexionBD();
+            var coleccion = conexion.ConexionMongo();
+
+            var filtro = Builders<BsonDocument>.Filter.Eq("Usuario", sUsuario) & Builders<BsonDocument>.Filter.Eq("Contrasena", sContrasena);
+            var usuarioE = coleccion.Find(filtro).FirstOrDefault();
+
+            if (usuarioE != null)
             {
-                home.SetActive(true);
-                ranking.SetActive(true);
-                login.SetActive(false);
-            }
-            
-            if (notificacion != null)
-            {
-                labelTitulo.text = $"Hola {usuario}!";
-                labelMensaje.text = "Bienvenido de nuevo. Estamos encantados de verte. ¡Disfruta de tu experiencia en el juego!";
-                notificacion.SetActive(true);
-            }
-            label.text = $"Hola {usuario} !";
+                string idUsuario = usuarioE["_id"].ToString();
+                string usuario = usuarioE["Usuario"].ToString();
+                PlayerPrefs.SetString("idUsuario", idUsuario);
+                PlayerPrefs.SetString("usuario", usuario);
+                //Debug.Log("ID del documento insertado: " + idUsuario);
+                ControllerUser.Instance.InicioSession(idUsuario, usuario);
+                if (home != null && login != null && ranking != null)
+                {
+                    home.SetActive(true);
+                    ranking.SetActive(true);
+                    login.SetActive(false);
+                }
+
+                if (notificacion != null)
+                {
+                    labelTitulo.text = $"Hola {usuario}!";
+                    labelMensaje.text = "Bienvenido de nuevo. Estamos encantados de verte. ¡Disfruta de tu experiencia en el juego!";
+                    notificacion.SetActive(true);
+                }
+                label.text = $"Hola {usuario} !";
 
 
+            }
+            else
+            {
+                if (notificacion != null)
+                {
+                    labelTitulo.text = "Inicio de Sesion Fallido";
+                    labelMensaje.text = "Lo sentimos, no hemos podido iniciar sesión con las credenciales proporcionadas. Verifica tu usuario y contraseña e intenta nuevamente. ";
+                    notificacion.SetActive(true);
+
+                }
+            }
         }
-        else
+        catch(Exception e)
         {
+            Debug.LogError("Excepción: " + e.ToString());
+
             if (notificacion != null)
             {
                 labelTitulo.text = "Inicio de Sesion Fallido";
-                labelMensaje.text = "Lo sentimos, no hemos podido iniciar sesión con las credenciales proporcionadas. Verifica tu usuario y contraseña e intenta nuevamente. ";
+                labelMensaje.text = "Lo sentimos, ha ocurrido un error al iniciar sesión. Por favor, contacta al soporte técnico.";
                 notificacion.SetActive(true);
-
             }
         }
+        
     }
 }
